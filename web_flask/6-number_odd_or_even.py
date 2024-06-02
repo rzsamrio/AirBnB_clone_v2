@@ -60,7 +60,7 @@ def disp_num(n):
 
 @app.route('/number_odd_or_even/<n>', strict_slashes=False)
 def num_type(n):
-    """ Display a number """
+    """ Display the type of the number """
     n = escape(n)
     try:
         n = int(n)
