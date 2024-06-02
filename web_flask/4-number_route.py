@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """ My First Web app """
-from flask import Flask
+from flask import Flask, abort
 from markupsafe import escape
 
 
@@ -44,7 +44,7 @@ def msg_num(n):
         n = int(n)
         return f'{n} is a number'
     except Exception:
-        return
+        abort(404)
 
 
 if __name__ == '__main__':
