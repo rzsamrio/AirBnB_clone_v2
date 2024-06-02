@@ -65,12 +65,13 @@ def num_type(n):
     try:
         n = int(n)
         if (n % 2 == 0):
-            return render_template('6-number_odd_or_even.html', number=n, stat='even')
+            return render_template('6-number_odd_or_even.html', number=n,
+                                   stat='even')
         else:
-            return render_template('6-number_odd_or_even.html', number=n, stat='odd')
+            return render_template('6-number_odd_or_even.html', number=n,
+                                   stat='odd')
     except Exception:
         abort(404)
-
 
 
 if __name__ == '__main__':
